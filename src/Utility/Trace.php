@@ -112,8 +112,8 @@ class Trace
      */
     private function checkModeValue()
     {
-        if (!in_array($this->mode, ['markers', 'lines', 'markers+line', null])) {
-            throw new \Exception('Invalid trace mode : can be either "markers", "lines" or "markers+line" ; got "' . $this->mode . '"');
+        if (!in_array($this->mode, ['markers', 'lines', 'markers+lines', null])) {
+            throw new \Exception('Invalid trace mode : can be either "markers", "lines" or "markers+lines" ; got "' . $this->mode . '"');
         }
     }
 }
